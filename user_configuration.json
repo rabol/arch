@@ -1,0 +1,180 @@
+{
+  "app_config": {
+    "audio_config": {
+      "audio": "pipewire"
+    },
+    "bluetooth_config": {
+      "enabled": true
+    },
+    "power_management_config": {
+      "power_management": "power-profiles-daemon"
+    },
+    "print_service_config": {
+      "enabled": true
+    }
+  },
+  "archinstall-language": "English",
+  "auth_config": {},
+  "bootloader_config": {
+    "bootloader": "Systemd-boot",
+    "removable": false,
+    "uki": true
+  },
+  "custom_commands": [],
+  "disk_config": {
+    "btrfs_options": {
+      "snapshot_config": {
+        "type": "Snapper"
+      }
+    },
+    "config_type": "default_layout",
+    "device_modifications": [
+      {
+        "device": "/dev/nvme0n1",
+        "partitions": [
+          {
+            "btrfs": [],
+            "dev_path": null,
+            "flags": ["boot", "esp"],
+            "fs_type": "fat32",
+            "mount_options": [],
+            "mountpoint": "/boot",
+            "obj_id": "7dd4c86a-3367-48eb-a102-e1dd653d9805",
+            "size": {
+              "sector_size": {
+                "unit": "B",
+                "value": 512
+              },
+              "unit": "GiB",
+              "value": 1
+            },
+            "start": {
+              "sector_size": {
+                "unit": "B",
+                "value": 512
+              },
+              "unit": "MiB",
+              "value": 1
+            },
+            "status": "create",
+            "type": "primary"
+          },
+          {
+            "btrfs": [
+              {
+                "mountpoint": "/",
+                "name": "@"
+              },
+              {
+                "mountpoint": "/home",
+                "name": "@home"
+              },
+              {
+                "mountpoint": "/var/log",
+                "name": "@log"
+              },
+              {
+                "mountpoint": "/var/cache/pacman/pkg",
+                "name": "@pkg"
+              }
+            ],
+            "dev_path": null,
+            "flags": [],
+            "fs_type": "btrfs",
+            "mount_options": ["compress=zstd"],
+            "mountpoint": null,
+            "obj_id": "4ab188ee-5d38-4d4a-b30e-d73255c09ff7",
+            "size": {
+              "sector_size": {
+                "unit": "B",
+                "value": 512
+              },
+              "unit": "B",
+              "value": 1023133351936
+            },
+            "start": {
+              "sector_size": {
+                "unit": "B",
+                "value": 512
+              },
+              "unit": "B",
+              "value": 1074790400
+            },
+            "status": "create",
+            "type": "primary"
+          }
+        ],
+        "wipe": true
+      }
+    ]
+  },
+  "hostname": "archlinux",
+  "kernels": ["linux"],
+  "locale_config": {
+    "kb_layout": "dk",
+    "sys_enc": "UTF-8",
+    "sys_lang": "en_US.UTF-8"
+  },
+  "mirror_config": {
+    "custom_repositories": [],
+    "custom_servers": [],
+    "mirror_regions": {
+      "Spain": [
+        "https://ftp.rediris.es/mirror/archlinux/$repo/os/$arch",
+        "http://es.mirrors.cicku.me/archlinux/$repo/os/$arch",
+        "https://es.mirrors.cicku.me/archlinux/$repo/os/$arch",
+        "http://mirror.raiolanetworks.com/archlinux/$repo/os/$arch",
+        "https://mirror.raiolanetworks.com/archlinux/$repo/os/$arch",
+        "http://mirror.es.cdn-perfprod.com/archlinux/$repo/os/$arch",
+        "https://mirror.es.cdn-perfprod.com/archlinux/$repo/os/$arch"
+      ]
+    },
+    "optional_repositories": []
+  },
+  "network_config": {
+    "type": "nm"
+  },
+  "ntp": true,
+  "packages": [
+    "btrfs-progs",
+    "dnsmasq",
+    "edk2-ovmf",
+    "firefox",
+    "intel-media-driver",
+    "kdenetwork-filesharing",
+    "kscreen",
+    "libappindicator-gtk3",
+    "libkscreen",
+    "libvirt",
+    "networkmanager",
+    "plasma",
+    "qemu-full",
+    "samba",
+    "snap-pac",
+    "snapper",
+    "swtpm",
+    "virt-manager",
+    "virt-viewer",
+    "zed"
+  ],
+  "parallel_downloads": 5,
+  "profile_config": {
+    "gfx_driver": "Intel (open-source)",
+    "greeter": "plasma-login-manager",
+    "profile": {
+      "custom_settings": {
+        "KDE Plasma": {}
+      },
+      "details": ["KDE Plasma"],
+      "main": "Desktop"
+    }
+  },
+  "script": null,
+  "services": ["NetworkManager", "libvirtd"],
+  "swap": {
+    "algorithm": "zstd",
+    "enabled": true
+  },
+  "timezone": "Europe/Madrid",
+  "version": "3.0.15"
+}
