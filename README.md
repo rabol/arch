@@ -69,4 +69,4 @@ cd yay
 makepkg -si
 ```
 
-I always use **pacman** before i use **yay**
+I always use **pacman** before I use **yay**
