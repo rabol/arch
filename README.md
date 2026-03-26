@@ -10,4 +10,4 @@ I tried so many distros and at the end I thought that I wanted to try Arch Linux
 # General - not specific to Arch Linux
 
 **Git**
-[Setup ssh to our git](https://github.com/rabol/arch/blob/main/README.md)
+[Setup ssh to our git](https://github.com/rabol/arch/blob/main/git_setup.md)
