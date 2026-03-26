@@ -137,6 +137,7 @@
   "ntp": true,
   "packages": [
     "btrfs-progs",
+    "discord",
     "dnsmasq",
     "edk2-ovmf",
     "firefox",
