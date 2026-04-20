@@ -48,3 +48,10 @@ ssh -T git@github.com
 ```
 
 You should see a success message.
+
+## Step 6 - Local setup
+
+```
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
+```
