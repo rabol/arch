@@ -51,7 +51,11 @@ You should see a success message.
 
 ## Step 6 - Local setup
 
-```
+```bash
 git config --global user.name "Your Name"
+```
+
+and
+```bash
 git config --global user.email "your@email.com"
 ```
