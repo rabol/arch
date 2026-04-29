@@ -35,6 +35,11 @@ sudo reboot
 sudo virt-host-validate qemu
 ```
 
+### enable user
+```bash
+sudo usermod -aG libvirt $USER
+```
+
 ## 8. Enable tuned
 ```bash
 sudo systemctl enable --now tuned
