@@ -23,7 +23,7 @@ password=yourpassword
 Save and then lock it down:
 
 ``` 
-sudo chmod 600 /root/.smb-credentials
+sudo chmod 600 ~/.smb-credentials
 ```
 
 
