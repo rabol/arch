@@ -2,8 +2,11 @@
 
 if you have a NAS and some shares
 
-remember to install ```gvfs-smb```
-
+remember to install needed packages 
+E.g 
+```
+sudo pacman -S gvfs gvfs-smb gvfs-dnssd avahi nss-mdns
+```
 Make a mount point
 ```bash
 sudo mkdir -p /home/<user_name>/shares/{sharename_1,sharename_2}
